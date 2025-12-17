@@ -1,0 +1,190 @@
+body{
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    background-color: transparent(50%);
+    width: 100%;
+    height: 50px;
+    
+}
+
+.logo {
+    height: 50px;
+    width: 65px;
+    float: left;
+    margin: 5px 20px 5px 20px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.barra ul li{
+    color: white;
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: block;
+    align-items: center;
+    margin: 12.5px 25px 0 0;
+    }
+
+.xarxes ul li{
+    color: white;
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: block;
+    align-items: center;
+    margin: 12.5px 5px 0 0;
+    float: right;
+    }
+
+
+
+
+h1 {
+    color: white;
+
+}
+
+.portada {
+    width: 175px;
+    height: 260px;
+    float: left;
+    margin: 0 50px 110px 0;
+
+
+}
+
+.portada:hover{ 
+    opacity: 50%;
+    background-color: black;
+    
+}
+
+.peli {
+     width: 175px;
+    height: 80px;
+    background-color: antiquewhite;
+
+}
+.i1 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/1982Koyaanisqatsi.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.nom {
+    color: white;
+    margin: 20px 60px 0 0;
+    
+}
+.seccio {
+    color: white;
+    margin: 20px 0 0 0;
+    float: right;
+}
+
+.any {
+    color: white;
+    margin: 20px 0px 0 0;
+    float: left;
+
+}
+
+
+
+
+.i2 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2004YTuQueSabes.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i3 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2005Earthlings.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i4 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2007Helvetica.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+.i5 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2007Sicko.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i6 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2008Zeitgeist2.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i7 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2009ArtAndCopy.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i8 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2009Home.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i9 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2009RipARemixManifesto.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i10 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2010ComprarTirarComprar.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i11 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2010InsideJob.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.i12 {
+    width: 175px;
+    height: 260px;
+    background-image: url(../img/2011LaDoctrinaDeShock.jpg);
+    border-radius: 5px;
+    margin: 5px;
+}
+

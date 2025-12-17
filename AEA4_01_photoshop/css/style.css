@@ -1,0 +1,286 @@
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 30, 54);
+    border-radius: 20%;
+    text-align: center;
+    color: rgb(49, 168, 255);
+    font-size: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+    margin: auto;
+
+}
+.contenidor {
+    width: 1100px;
+    margin: auto;
+}
+
+.efecte{
+    width: 200px;  
+    height: 250px;
+    margin: 10px;
+    float: left;
+}
+
+.efecte img{
+    width: 200px;
+}
+
+.efecte p{
+    text-align: center;
+}
+
+.efecte input{
+    width: 200px;
+}
+
+.desenfocar img {
+    -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+                filter: blur(10px);
+}
+
+.grisos img {
+    filter: grayscale(100%);
+
+}
+
+.ombra img{
+    filter: drop-shadow(6px 6px 6px purple)    
+}
+
+.sepia img {
+    filter: sepia(100%);
+}
+
+.lluminositat img{
+    filter: brightness(200%);
+}
+
+.contrast img{
+    filter: contrast(40%);
+}
+
+.to img{
+    filter: hue-rotate(90deg);
+}
+
+.invertir img{
+    filter: invert(100%);
+}
+
+.saturar img{
+    filter: saturate(100%);
+}
+
+.opacitat img{
+    filter: opacity(40%);
+}
+
+h1 {
+    font-size: 48px;
+    background: #ccc;
+    clear: both;
+}
+
+.fruita {
+    background-image: url(../img/maduixa.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.superposada {
+    background-image: url(../img/llimona.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.multiplicar .superposada {
+    mix-blend-mode: multiply;
+}
+
+.trama .superposada {
+    mix-blend-mode: screen;
+}
+
+.superposar .superposada {
+    mix-blend-mode: overlay;
+}
+
+.enfosquir .superposada {
+    mix-blend-mode: darken;
+}
+
+.aclarir .superposada {
+    mix-blend-mode: lighten;
+}
+
+.colormesfosc .superposada {
+    mix-blend-mode: color-dodge;
+}
+
+.colormesclar .superposada {
+    mix-blend-mode: color-burn;
+}
+
+.llumintensa .superposada {
+    mix-blend-mode: hard-light;
+}
+
+.llumsuau .superposada {
+    mix-blend-mode: soft-light;
+}
+
+.diferencia .superposada {
+    mix-blend-mode: ;
+}
+
+.exclusio .superposada {
+
+}
+
+.to .superposada {
+    mix-blend-mode: hue;
+}
+
+.saturacio .superposada {
+    mix-blend-mode: ;
+}
+
+.color .superposada {
+    mix-blend-mode: ;
+}
+
+.lluminositat .superposada {
+    mix-blend-mode: ;
+}
+
+/*cambiem els interruptors*/ 
+
+.interruptor {
+  width:50px;
+  height:25px;
+  background:white;
+  position:relative;
+  border-radius:25px;
+  border: 1px solid #999;
+  margin:auto;
+  box-shadow: 2px 2px 2px grey inset;
+}
+
+input[type=checkbox]{
+  visibility:hidden;
+  display:none;
+}
+
+label {
+  display:block;
+  width:25px;
+  height:25px;
+  background:white;
+  box-shadow: 2px 0 2px grey;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:25px;
+
+}
+
+
+
+input[type=checkbox]:checked+label {
+  display:block;
+  width:25px;
+  height:25px;
+  background:white;
+  position:absolute;
+  top:0;
+  left:25px;
+  border-radius:25px;
+  box-shadow: -2px 0 2px grey;
+  
+}
+
+/*----------------------------cambiem els interruptors-------------------------------*/ 
+
+input[type=range]{
+  -webkit-appearance: none;
+  width:100%;
+  background:transparent;
+  margin: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::focus {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor:pointer;
+}
+
+/*anem fent apareixer els diferents elements*/
+/*fem apareixer la maneta*/
+
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #333;
+  height: 16px;
+  width: 16px;
+  border-radius:100%;
+  background: yellow;
+  cursor: pointer;
+  margin-top: -1px;
+  box-shadow: 1px 1px 1px #000;
+}
+
+/*fem apareixer el carril*/
+
+input[type=range]::-webkit-slider-runnable-track{
+  width:100%;
+  height:15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #b5b3b3;
+  background: rgb(233, 231, 231);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-moz-slider-runnable-track{
+  width:100%;
+  height:8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track{
+  width:100%;
+  height:8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}

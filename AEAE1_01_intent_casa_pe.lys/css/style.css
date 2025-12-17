@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background: #222;
+}
+
+.titol1 {
+    color: #CCC;
+    font-size: 22px;
+}
+
+.grup1 {
+    float: left;
+    width: 100%;
+}
+
+.grup2 {
+    float: left;
+    width: 100%;
+}
+
+.grup3 {
+    float: left;
+    width: 100%;
+}
+
+.grup4 {
+    float: left;
+    width: 100%;
+}
+
+.grup5 {
+    float: left;
+    width: 100%;
+}
+
+.grup6 {
+    float: left;
+    width: 100%;
+}
+
+
+.pelicula {
+    height: 300px;
+    width: 175px;
+    border-radius: ;
+    float: left;
+    margin: 0 20px 20px 5px;
+}
+
+.imatge {
+    width: 175px;
+    height: 260px;
+}
+
+.titol {
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    color: #CCC;
+    font-size: 14px;
+}
+
+.any {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
+    color: #CCC;
+    font-size: 11px;
+}
+
+.tipus {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
+    color: #CCC;
+    font-size: 11px;
+}
+
+.koyaanisqatsi {
+    background-image: url(../img/1982Koyaanisqatsi.jpg);
+}
+
+.tercera {
+    background-image: url(../img/2004YTuQueSabes.jpg);
+}
+
+.earthlings {
+    background-image: url(../img/2005Earthlings.jpg);
+}
+
+.helvetica {
+    background-image: url(../img/2007Helvetica.jpg);
+}
+
+.sicko {
+    background-image: url(../img/2007Sicko.jpg);
+}
+
+.zeitgeistII {
+    background-image: url(../img/2008Zeitgeist2.jpg)
+}
+
+.artcopy {
+    background-image: url(../img/2009ArtAndCopy.jpg);
+}
+
+.home {
+    background-image: url(../img/2009Home.jpg);
+}
+
+.rip {
+    background-image: url(../img/2009RipARemixManifesto.jpg);
+}
+
+.comprar {
+    background-image: url(../img/2010ComprarTirarComprar.jpg);
+}
+
+.insidejob {
+    background-image: url(../img/2010InsideJob.jpg);
+}
+
+.doctrina {
+    background-image: url(../img/2011LaDoctrinaDeShock.jpg);
+}
+
+.searching {
+    background-image: url(../img/2012SearchingForSugarMan.jpg);
+}
+
+.act {
+    background-image: url(../img/2012TheActOfKilling.jpg);
+}
+
+.espiritu {
+    background-image: url(../img/2013ElEspirituDel45.jpg);
+}
+
+.vermella1 {
+    background-image: url(../img/XXXXpeli.jpg);
+}
+
+.vermella2 {
+    background-image: url(../img/XXXXpeli.jpg);
+}
+
+.gris1 {
+    background-image: url(../img/quasinegre.png);
+}
+
+.gris2 {
+    background-image: url(../img/quasinegre.png);
+}
+
+.groga1 {
+    background-image: url(../img/XXXXserie.jpg);
+}
+
+.groga2 {
+    background-image: url(../img/XXXXserie.jpg);
+}
+

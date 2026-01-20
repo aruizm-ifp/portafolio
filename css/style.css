@@ -1,85 +1,655 @@
 :root {
-    /* Aquí hi van les variables */
+    --tipografia1: "Playfair Display", serif;
+    --tipografia2: "Lato", sans-serif;
 }
+
 
 * {
     /* Aquí hi va el reset */
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-    /* Aquí hi van les fonts personalitzades */
+
+html {
+    scroll-snap-type: y mandatory;
 }
 
+section {
+    scroll-snap-align: start;
+}
 
     /* Aquí hi van propietats generals */
 
 body {
-    background: white;
+    background: #0b1220;
+    color: white;
      width: 100%;
     height: 250px;
-
+    margin: 20px 0;
+    padding-top: 70px;
 }
 
-li { 
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background: red;
-    margin: 1rem;
-    float: left;
-    list-style-type: none;
-}
+/* Barra superior */
 
-.barra {
-
-    background: rgb(124, 123, 123);
-    border-radius: 0%;
-    height: 20px;
-    width: 120px;
-    margin: 0 50px 0 0 auto;
-    top: 0px;
-    color: aliceblue;
+header {
+    background-color: #0f172a;
+    padding: 15px 40px;
     
 }
-
-ul {
-    width: 36rem;
-    margin: auto;
-}
-
-
-    /* Aquí hi van propietats responsives */
-
-
-
-@media (max-width:480px) 
-    /* Aquí hi va la versió mòbil */
- {
-
-    
- }
-
-@media (min-width:481px) and (max-width:1279px) 
- {
-
-        li {
-            background: rgb(192, 207, 192);
-        }
-    
- }
-
-
-@media (min-width:1280px)
- 
-    body {
-        background: pink;
-    }
 
 .cap {
-    width: 100%;
-    height: 250px;
-    background: rgb(211, 211, 211);
+    display: flex;               /* Pone todo en una sola fila */
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;         /* Centra verticalmente */
+    padding: 20px 10px;
+    background-color: #111827;
+    position: fixed;   /* ← HACE QUE SE QUEDE FIJA */
+    top: 0;            /* ← PEGADA ARRIBA */
+    left: 0;
+    width: 100%;       /* ← OCUPA TODO EL ANCHO */
+    z-index: 1000;
+    
 }
+
+/* Logo */
+.logo {
+    color: #C0C0C0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Menú */
+.menu {
+    list-style: none;            /* Quita los puntos */
+    display: flex;               /* Elementos en fila */
+    gap: 35px;                   /* Espacio entre links */
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Links */
+.menu li a {
+    text-decoration: none;       /* Quita el subrayado */
+    color: white;
+    font-size: 20px;
+}
+
+/* Efecto al pasar el mouse */
+.menu li a:hover {
+    color: #ec4899;
+}
+
+.inici {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 120px;
+    
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: var(--tipografia1);
+}
+
+.inici p {
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: var(--tipografia1);
+}
+
+button {
+    margin: 1rem auto auto auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    float: left;
+    background-color: #ec4899;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+span {
+    color: #ec4899;
+}
+
+.foto img {
+    width: 500px;
+    height: 500px;
+    border-radius: 110%;
+    float: left;
+    margin-left: 300px;
+    border: 2px solid #cbd5e1;
+    
+}
+
+
+.sobremi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: #0b1220;
+    color: white; 
+    float: left;
+    
+}
+
+h2 {
+    color: #ec4899;
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-family: var(--tipografia1);
+}
+
+
+.introduccion {
+    max-width: 65%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.introduccion p {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: var(--tipografia2);
+    margin-bottom: 10px;
+}
+
+.introduccion p1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--tipografia2);
+}
+
+.foto1 img {
+    width: 500px;
+    height: 500px;
+    border-radius: 110%;
+    float: left;
+    margin-left: 300px;
+    border: 2px solid #cbd5e1;
+}
+
+h3 {
+    text-align: center;
+    color: #ec4899;
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-family: var(--tipografia1);
+}
+
+.skills {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 40px;
+
+}
+
+.skills-contenidor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-tarjeta {
+    background-color: #1e293b;
+    width: 200px;
+    height: 180px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.skill-tarjeta img {
+    width: 70px;
+}
+
+.skill-tarjeta p {
+    font-size: 20px;
+    font-family: var(--tipografia2);
+}
+
+
+h4 {
+    text-align: center;
+    color: #ec4899;
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-family: var(--tipografia1);
+}
+
+.treballs {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.treballs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titol-seccio {
+    color: #ec4899;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tarjetes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.tarjeta {
+    background-color: #1e293b;
+    width: 280px;
+    border-radius: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    font-family: var(--tipografia2);
+}
+
+.tarjeta p {
+    height: 8.4rem;
+    font-size: 15px;
+    color: #cbd5e1;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    font-family: var(--tipografia2);
+}
+
+.tarjeta-btn {
+    padding: 8px 15px;
+    background-color: #ec4899;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    font-family: var(--tipografia2);
+    
+}
+
+
+h6 {
+    color: #ec4899; /* rosa com els títols */
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-family: var(--tipografia1);
+}
+
+
+.info-extra {
+    background-color: #1e293b; 
+    padding: 60px 20px;
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 10px;
+}
+
+.info-extra p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: var(--tipografia2);
+    
+}
+
+.info-contacte p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #cbd5e1;
+    font-family: var(--tipografia2);
+}
+
+strong {
+    color: #ec4899;
+}
+
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cap {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* INICI */
+    .inici {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .inici p {
+        font-size: 22px;
+    }
+
+    button {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .foto img {
+        width: 250px;
+        height: 250px;
+        margin: 30px auto 0;
+        float: none;
+    }
+
+    /* SOBRE MI */
+    .sobremi {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .introduccion {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .introduccion p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .introduccion p1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* SKILLS */
+    h3 {
+        font-size: 38px;
+    }
+
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .skills-contenidor {
+        gap: 20px;
+    }
+
+    /* TREBALLS */
+    h4 {
+        font-size: 38px;
+    }
+
+    .tarjetes {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CONTACTE */
+    h6 {
+        font-size: 28px;
+    }
+
+    .info-extra p {
+        font-size: 18px;
+    }
+
+    .info-contacte p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .cap {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* INICI */
+    .inici {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .inici p {
+        font-size: 20px;
+    }
+
+    button {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .foto img {
+        width: 220px;
+        height: 220px;
+        margin: 30px auto 0;
+        float: none;
+    }
+
+    /* SOBRE MI */
+    .sobremi {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .introduccion {
+        max-width: 100%;
+    }
+
+    .introduccion p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .introduccion p1 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* SKILLS */
+    h3 {
+        font-size: 34px;
+    }
+
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .skills-contenidor {
+        gap: 15px;
+    }
+
+    /* TREBALLS */
+    h4 {
+        font-size: 34px;
+    }
+
+    .tarjetes {
+        grid-template-columns:1fr;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CONTACTE */
+    h6 {
+        font-size: 26px;
+    }
+
+    .info-extra p {
+        font-size: 16px;
+    }
+
+    .info-contacte p {
+        font-size: 13px;
+    }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 1279px) {
+
+    /* INICI */
+    .inici {
+        padding: 80px 40px;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .inici p {
+        font-size: 28px;
+    }
+
+    .foto img {
+        width: 350px;
+        height: 350px;
+        margin-left: 0;
+    }
+
+    /* SOBRE MI */
+    .introduccion {
+        max-width: 80%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .introduccion p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .introduccion p1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* SKILLS */
+    h3 {
+        font-size: 45px;
+    }
+
+    /* TREBALLS */
+    .tarjetes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .inici {
+        padding: 120px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .foto img {
+        width: 500px;
+        height: 500px;
+        margin-left: 300px;
+    }
+
+    .tarjetes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+ 
+
+
+
+https://github.com/aruizm-ifp/portafolio
+
+https://aruizm-ifp.github.io/portafolio

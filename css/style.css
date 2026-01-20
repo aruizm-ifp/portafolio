@@ -134,11 +134,12 @@ span {
     align-items: center;
     justify-content: center;
     padding-right: 0px;
-    min-width: 100vh;
+    min-width: auto;
     min-height: 100vh;
     background-color: #0b1220;
     color: white; 
-    float: left;
+    float: none;
+
     
 }
 
@@ -433,15 +434,6 @@ strong {
         font-size: 38px;
     }
 
-    .tarjetes {
-        grid-template-columns: 1fr;
-    }
-
-    .tarjeta {
-        width: 100%;
-        max-width: 320px;
-    }
-
     /* CONTACTE */
     h6 {
         font-size: 28px;
@@ -504,6 +496,9 @@ strong {
     .sobremi {
         min-height: auto;
         padding: 60px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h2 {
@@ -512,6 +507,7 @@ strong {
 
     .introduccion {
         max-width: 100%;
+        padding: 0;
     }
 
     .introduccion p {
@@ -543,7 +539,9 @@ strong {
     }
 
     .tarjetes {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
     }
 
     .tarjeta {

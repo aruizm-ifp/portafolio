@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS07</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: ;
+
+        }
+
+        #sol    {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: orange;
+            float: left;
+            margin: 1rem;
+        }
+
+        #lluna  {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            box-shadow: 0.5rem 0 0 silver;  
+            float: left;
+            margin: 1rem;
+        }
+
+        ul {
+
+            float: right;
+            margin: 0rem;
+
+        }
+
+        li {
+            display: inline-block;
+            margin: 1rem;
+            font-size: 2rem;
+        }
+
+        #txt {
+            width: 30rem;
+            margin: 0 auto;
+            margin: 3rem auto 1rem auto;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="sol"></div>
+    <div id="lluna"></div>
+
+    <ul>
+        <li id="a">A</li>
+        <li id="aa">AA</li>
+        <li id="aaa">AAA</li>
+    </ul>
+    <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti exercitationem culpa molestiae quos, omnis minus nihil ut modi magnam aspernatur doloremque vero. Dignissimos nihil asperiores earum veniam, mollitia commodi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur iure eius. Facere necessitatibus dolor fuga corrupti harum, sapiente quia aliquid recusandae! Quasi et mollitia ducimus perspiciatis eius suscipit Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Obcaecati minus, doloribus amet dicta beatae labore aliquam cum laborum quod? Ullam culpa deleniti minus, molestias laudantium alias autem itaque corporis sunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam possimus, at commodi voluptatem cumque suscipit ratione, illum neque rem ducimus. Autem veniam laudantium ratione vel itaque facere facilis fuga?
+    </p>
+
+</body>
+<script type="text/javascript" language="javascript">
+        document.getElementById("sol").addEventListener("click", dia);
+        document.getElementById("lluna").addEventListener("click", nit);
+
+
+        function dia() {
+             document.body.style.backgroundColor="orange";
+             document.body.style.color="black";
+            document.getElementById("txt").style.color="black";
+            document.getElementById("a").style.color="black";
+            document.getElementById("aa").style.color="black";
+            document.getElementById("aaa").style.color="black";
+
+
+
+        }
+
+        function nit() {
+            document.body.style.backgroundColor="black";
+            document.getElementById("txt").style.color="white";
+            document.getElementById("a").style.color="white";
+            document.getElementById("aa").style.color="white";
+            document.getElementById("aaa").style.color="white";
+
+            
+        }
+
+        ////////////////////////////////////////////////////////////////////
+
+        //definim els events
+
+        document.getElementById("a").addEventListener("click", reduir);
+        document.getElementById("aa").addEventListener("click", normal);
+        document.getElementById("aaa").addEventListener("click", augmentar);
+
+        // creem les funcions
+
+        function reduir() {
+            document.getElementById("txt").style.fontSize="0.5rem";
+
+        }
+
+        function normal() {
+            document.getElementById("txt").style.fontSize="1rem";
+            
+        }
+
+        function augmentar() {
+            document.getElementById("txt").style.fontSize="2rem";
+            
+        }
+
+
+
+</script>
+
+
+</html>
